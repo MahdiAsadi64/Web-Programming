@@ -1,0 +1,44 @@
+<html dir="rtl">
+    <head>
+        <title>جلسه پنجم</title>
+    </head>
+    <body>
+        <p>جلسه پنجم به تاریخ دوم اسفندماه 1402</p>
+        <h3>المان های block و inline</h3>
+        <p><b>المان های block</b>از خط جدید آغاز شده و تمام عرض والد خود را اشغال می کنند</p>
+        <p style="background-color: lightpink;"><b>مثال : </b>این یک پاراگراف است. پاراگراف ها به صورت پیشفرض به صورت block نمایش داده می شوند به همین دلیل کل عرض والد که در اینجا body است را گرفته همینطور پاراگراف بعدی از خط جدید شروع شده و دنباله این پاراگراف نیامده است</p>
+        <p style="background-color: lightblue;">این یک پاراگراف دیگر است</p>
+        <p style="background-color: yellow;">و این یک پاراگراف دیگر ، همانطور که می بینید هر پاراگراف و بهتر بگوییم هر المان که به صورت block باشد از خط جدید شروع شده و حتی اگر محتوی زیادی نداشته باشد هم کل عرض والدش را اشغال می کند</p>
+        <p><b>المان های inline </b>بدون رفتن به خط جدید نمایش داده می شوند و به صورت پیشفرض به اندازه محتوایشان عرشض اشغال می کنند.</p>
+        <p style="background-color: lightskyblue;">این یک پاراگرف است و <span style="background-color: red; border-style: dotted ;">این یک المان inline</span> که بدون line break ظاهر شده و عرضی به اندازه محتوایش دارد</p>
+        <p>در زیر چند المان inline پشت سر هم آمده است</p>
+        <span style="background-color: rgb(150, 0, 20);">المان اول</span>
+        <span style="background-color: rgb(0,150,200);">المان دوم</span>
+        <span style="background-color: rgb(255,200,180);">المان سوم</span>
+        <span style="background-color: rgb(150, 150, 150);">المان چهارم</span>
+        <p><b>نکته :</b>المان div یک المان block است که اغلب به عنوان container برای سایر المان های Html مورد استفاده قرار می گیرد و در ادامه با استفاده از CSS امکان استایل دهی به مجموعه ای از المان های داخلش را فراهم می کند.</p>
+        <h3>فرمها در Html</h3>
+        <p>هر کجا نیاز به دریافت اطلاعات از کاربر باشد از تک form استفاده میشود</p>
+        <form action="" method="">
+            <label for="name">نام :</label>
+            <input type="text" name="name">
+            <br>
+            <label for="family">نام خانوادگی</label>
+            <input type="text" name="family">        
+            <br>
+            <label for="gender">جنسیت</label>
+            <input type="radio" name="gender" value="male"> <span>آقا</span>
+            <input type="radio" name="gender" value="female"> <span>خانم</span>
+            <br>
+            <label for="mailbox">ایمیل</label>
+            <input type="email" name="mailbox">
+            <br>
+            <label for="skills">توانمندی ها</label>
+            <input type="checkbox" name="skills" value="1">برنامه نویسی
+            <input type="checkbox" name="skills" value="2">نقاشی
+            <input type="checkbox" name="skills" value="3">نویسندگی
+            <input type="checkbox" name="skills" value="4">بازیگری
+        </form>
+
+    </body>
+</html>
